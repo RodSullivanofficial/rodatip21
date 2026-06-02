@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - rodatip21</title>
+    <style>
+        /* Podstawowe ustawienia i animowane tło gradientowe */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(-45deg, #050505, #11001c, #001219, #000000);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 40px 20px;
+        }
+
+        /* Animacja płynnego przejścia tła w tle */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Przycisk powrotu w lewym górnym rogu */
+        .back-btn {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            color: #aaaaaa;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .back-btn:hover {
+            color: #0078D7;
+        }
+
+        /* Kontener na całą zawartość */
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        /* Nagłówek główny "MY PROJECTS" */
+        .title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #007bff, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #888888;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+        }
+
+        /* Siatka (Grid) na karty z projektami */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 10px;
+        }
+
+        /* Styl pojedynczej karty projektu (Glassmorphism) */
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: left;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 120, 215, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 120, 215, 0.1);
+        }
+
+        /* Zawartość tekstowa karty */
+        .project-tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #0078D7;
+            margin-bottom: 10px;
+        }
+
+        .project-name {
+            font-size: 1.6rem;
+            margin: 0 0 15px 0;
+            font-weight: 700;
+        }
+
+        .project-desc {
+            color: #cccccc;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-0: 0 0 25px 0;
+            flex-grow: 1; /* Wypycha przycisk na dół karty, jeśli tekst jest krótszy */
+        }
+
+        /* Linki wewnątrz kart */
+        .project-link {
+            align-self: flex-start;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            border-bottom: 2px solid #0078D7;
+            padding-bottom: 2px;
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-link:hover {
+            color: #0078D7;
+            border-color: #8a2be2;
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            .back-btn {
+                position: static;
+                margin-bottom: 20px;
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <div class="container">
+        <h1 class="title">My Projects</h1>
+        <p class="subtitle">Things i have been working on.</p>
+
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div>
+                    <div class="project-tag">Operating System</div>
+                    <h2 class="project-name">OskarOS</h2>
+                    <p class="project-desc">A custom operating system project designed to be lightweight, efficient, and unique. Currently receiving updates.</p>
+                </div>
+                <a href="oskaros-download.html" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <div class="project-tag">Game</div>
+                    <h2 class="project-name">I'm Ready</h2>
+                    <p class="project-desc">An upcoming FPS and Low Poly game built in Unity.</p>
+                </div>
+                <a href="iamready.html" class="project-link">View the Site →</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <div class="project-tag">YouTube / Media</div>
+                    <h2 class="project-name">Devlogs & Tutorials</h2>
+                    <p class="project-desc">Sharing the development journey, Unity tips, and game design breakdowns with the community.</p>
+                </div>
+                <a href="#" class="project-link">Watch Videos →</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

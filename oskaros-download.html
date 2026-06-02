@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download OskarOS</title>
+    <style>
+        /* Ustawienia podstawowe i czarne tło */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Napis rodatip21 w lewym górnym rogu */
+        .top-left-link {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+            color: #aaaaaa;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .top-left-link:hover {
+            color: #ffffff;
+        }
+
+        /* Główny kontener na zawartość */
+        .container {
+            margin-top: 120px; /* Odstęp od góry */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Nagłówek "Download OSKAROS" */
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            text-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Ramka z wersją i przyciskiem pobierania */
+        .download-box {
+            border: 2px solid #333333;
+            background-color: #111111;
+            border-radius: 15px;
+            padding: 50px 80px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+        }
+
+        .version-title {
+            font-size: 2.2rem;
+            margin: 0 0 35px 0;
+            font-weight: 600;
+        }
+
+        /* Przycisk pobierania */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 45px;
+            background-color: #0078D7; /* Windows/OskarOS Blue */
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.4);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #005a9e;
+            transform: translateY(-3px);
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 600px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            .download-box {
+                padding: 30px 20px;
+                width: 90%;
+            }
+            .version-title {
+                font-size: 1.5rem;
+            }
+            .top-left-link {
+                top: 15px;
+                left: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Link w lewym górnym rogu -->
+    <a href="index.html" class="top-left-link">rodatip21</a>
+
+    <div class="container">
+        <!-- Nagłówek na górze -->
+        <h1 class="page-title">Download OSKAROS</h1>
+
+        <!-- Ramka z zawartością -->
+        <div class="download-box">
+            <h2 class="version-title">OskarOS V0.0.1</h2>
+            
+            <!-- Przycisk z atrybutem "download", który wymusza pobranie docelowego pliku .iso -->
+            <a href="what.html" class="download-btn">Download</a>
+        </div>
+    </div>
+
+</body>
+</html>

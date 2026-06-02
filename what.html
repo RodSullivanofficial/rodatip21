@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z obrazka</title>
+    <style>
+        /* Reset podstawowych marginesów i ustawienie tła */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative; /* Potrzebne do prawidłowego pozycjonowania przycisku */
+        }
+
+        /* Przycisk w lewym górnym rogu */
+        .top-left-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none; /* Usuwa domyślne podkreślenie linku */
+            background-color: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Efekt po najechaniu myszką na przycisk */
+        .top-left-btn:hover {
+            background-color: #252525;
+            border-color: #007bff; /* Subtelny niebieski akcent nawiązujący do gradientu */
+            cursor: pointer;
+        }
+
+        /* Sekcja z dużym napisem na górze (wyśrodkowana) */
+        .header-section {
+            text-align: center;
+            margin-top: 100px; /* Odstęp od górnej krawędzi ekranu */
+        }
+
+        .main-title {
+            font-size: 42px;
+            font-weight: 900; /* Bardzo mocny bold */
+            letter-spacing: 2px; /* Rozstrzelenie liter */
+            
+            /* Efekt mieszanego gradientu niebiesko-fioletowego na tekście */
+            background: linear-gradient(45deg, #007bff, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            
+            display: inline-block;
+        }
+
+        /* Sekcja z tekstem po lewej stronie */
+        .content-section {
+            margin-top: 120px; /* Odstęp pionowy między dużym napisem a tekstem bocznym */
+            padding-left: 70px; /* Odstęp od lewej krawędzi ekranu */
+        }
+
+        /* Zwiększony boczny tekst z odpowiednim odstępem linii */
+        .side-text {
+            font-size: 22px; /* Zwiększony rozmiar tekstu */
+            line-height: 1.4; /* Lekko zwiększona interlinia dla lepszej czytelności */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Przycisk przenoszący na index.html -->
+    <a href="index.html" class="top-left-btn">rodatip21</a>
+
+    <div class="header-section">
+        <div class="main-title">Why is not OskarOS there?</div>
+    </div>
+
+    <div class="content-section">
+        <div class="side-text">
+            OskarOS Is not Here, Beacuse OskarOS is <b>BROKEN</b> <br> So, you need to wait.
+        </div>
+    </div>
+
+</body>
+</html>
