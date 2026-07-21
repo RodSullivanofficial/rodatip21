@@ -1,6 +1,6 @@
 # rodatip21
 Oficjalna Strona rodatip21.
-![Wersja](https://img.shields.io/badge/Wersja-1.1.2-orange)
+![Wersja](https://img.shields.io/badge/Wersja-1.1.2----%23hotfix1-orange)
 ![Android](https://img.shields.io/badge/Silnik-HTML-brown)
 ![Status](https://img.shields.io/badge/Status-In--Dev-blue)
 ![Status](https://img.shields.io/badge/Languages-en/PL-lime)
